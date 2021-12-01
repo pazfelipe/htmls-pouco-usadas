@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags pouco usadas</title>
+
+    <style>
+      *,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+
+      .container h1 {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+      }
+
+      .container .content,
+      .container h1 {
+        background-color: #c1c1c1;
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      .content {
+        flex-basis: 100%;
+        background-color: purple;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .item {
+        display: inline-block;
+        background-color: #fff;
+        width: 30%;
+        padding: 5px;
+        border-radius: 5px;
+        color: #707070;
+      }
+      
+      .item > div:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      .item .label {
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      
+      .item .example,
+      .item .description {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tags HTML pouco conhecidas</h1>
+      <div class="content">
+        <div class="item">
+          <div class="label">Progress</div>
+          <div class="description">Barra de progresso</div>
+          <div class="example">
+            <progress value="50" max="100"></progress>
+            <progress></progress>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">Datalist</div>
+          <div class="description">Autocomplete nativo</div>
+          <div class="example">
+            
+            <form>
+              <input list="browsers" name="browser" placeholder="Browsers">
+              <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Safari">
+            </form>
+            
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">del</div>
+          <div class="description">Define um texto deletado do documento</div>
+          <div class="example">
+            <p>
+              Lorem ipsum dolor sit amet <del>consectetur adipisicing</del> elit. Ipsam velit debitis iusto quis.
+            </p>
+          </div>
+        </div>
+
+        <div class="item" style="width: 50%">
+          <div class="label">Map</div>
+          <div class="description">Define uma região de uma figura para ser clicável e linkada a algum lugar</div>
+          <small>Clique sobre o computador, celular ou sobre a xícara de café.</small>
+          <div class="example">
+            <img src="https://www.w3schools.com/tags/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/tags/computer.htm">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/tags/phone.htm">
+              <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/tags/coffee.htm">
+            </map>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">Meter</div>
+          <div class="description">Gauge nativo</div>
+          <div class="example">
+            <label for="meter">Tarefas completadas</label>
+            <meter value="3" min="1" max="10" id="meter">3 de 10</meter>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">S</div>
+          <div class="description">Define um texto que não está mais correto ou não é mais relevante</div>
+          <div class="example">
+            <p>Promoção do dia: De <del>R$14,99</del> por R$ 9,99</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">Details</div>
+          <div class="description">Quase um collapse native do HTML</div>
+          <div class="example">
+            <details>
+              <summary>Lista de itens</summary>
+              <dt>
+                <dd>Luvas</dd>
+                <dd>Capacetes</dd>
+                <dd>Jornais</dd>
+              </dt>
+            </details>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">Datalist</div>
+          <div class="description">Autocomplete nativo</div>
+          <div class="example">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
